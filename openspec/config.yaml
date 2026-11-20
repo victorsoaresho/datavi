@@ -1,0 +1,15 @@
+schema: spec-driven
+
+context: |
+  Escreva todos os artefatos em português.
+  Projeto de estudos: PoC do Airbyte extraindo de MySQL para Object Storage na Magalu Cloud (br-se1).
+  Infra efêmera: tudo exceto o bucket dataplat-state deve ser criado e destruído via Terraform.
+  Preferir opções baratas e rápidas de provisionar a opções de produção.
+  Roteiro das fases em docs/plano-de-execucao.md.
+
+rules:
+  design:
+    - Explicar o porquê de cada decisão e as alternativas descartadas (objetivo didático)
+  tasks:
+    - Tarefas pequenas, cada uma verificável com um comando
+    - Incluir uma tarefa de teardown/validação de destroy quando criar recursos
