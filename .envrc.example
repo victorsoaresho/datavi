@@ -1,0 +1,13 @@
+# Copie para .envrc (ignorado pelo Git) e preencha com os valores de:
+#   mgc auth api-key get <id-da-sua-api-key>
+#
+# Carregue no shell com:  source .envrc   (ou use o direnv)
+
+# Provider Terraform da MGC
+export TF_VAR_mgc_api_key=""
+export TF_VAR_mgc_key_pair_id=""
+export TF_VAR_mgc_key_pair_secret=""
+
+# Backend S3 do Terraform (fase 2 em diante): mesmo key pair do Object Storage
+export AWS_ACCESS_KEY_ID="$TF_VAR_mgc_key_pair_id"
+export AWS_SECRET_ACCESS_KEY="$TF_VAR_mgc_key_pair_secret"
